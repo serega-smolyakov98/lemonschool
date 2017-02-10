@@ -1,0 +1,10 @@
+img { width: 300px;
+            border: 4px double #f0f;}
+
+      strong { border-left: 4px dashed BlueViolet }
+
+      ol 
+      a { font-size: 19.2px; 
+          color: DarkGreen;}
+      footer { text-align: center;
+      	border-bottom: 2px dashed #000}
