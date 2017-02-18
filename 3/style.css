@@ -5,7 +5,9 @@
 	margin: 0px 0px;	
 }
 
-.wrapper {
+.wrapper,
+.content,
+footer {
 	max-width: 1200px; 
 	border-left: 2px dotted black;
 	border-right: 2px dotted black;
