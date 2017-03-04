@@ -1,0 +1,232 @@
+@import 'reset.css';
+
+.wrapper-hello {
+	background-color: #69d2e7;
+	border-top: 5px solid #fa6900;
+}
+
+.content {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	padding-top: 35px;
+}
+
+.logo {
+	display: block;
+	width: 250px;
+}
+
+.logo img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.logo div {
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.company-name,
+.company-description {
+	display: block;
+	white-space: nowrap;
+}
+
+.company-name {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.company-decription {
+	font-size: 17px;
+}
+
+.hello {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 94px;
+	padding-bottom: 180px;
+}
+
+.hello_title {
+	font-size: 84px;
+	line-height: 1em;
+}
+
+.hello_description {
+	font-size: 31px;
+	line-height: 1em;
+}
+
+.wrapper-about {
+	background-color: #f1f1f1;
+	padding-top: 1px;
+}
+
+.about_us {
+	max-width: 835px;
+	border-top: 1px solid white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about,
+.about_description {
+	text-align: center;
+	background-color: white;
+}
+
+.about {
+	font-size: 36px;
+	text-transform: uppercase;
+	padding-top: 47px;
+	padding-bottom: 28px;
+	margin-top: -100px;
+	border-radius: 8px;
+}
+
+.about_description {
+	font-size: 22px;
+	padding-top: 35px;
+	padding-bottom: 67px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.img {
+	max-width: 835px;
+	margin-left:auto;
+  margin-right:auto;
+}
+
+.picture {
+	max-width: 300px;
+	display: inline-block;
+	padding-top: 65px;
+  }
+
+.pic-description {
+	padding-top: 29px;
+	max-width: 200px;
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 43px;
+}
+
+.images {
+	padding-left: 19px;
+}
+
+.left-right {
+	margin-right: 110px;
+	margin-left: 110px;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+}
+
+.wrapper-contant {
+	background-color: #fa6900;
+	color: white;
+}
+
+.text {
+	padding-top: 142px;
+	padding-bottom: 130px;
+	max-width: 425px;
+}
+
+.lorem {
+	font-size: 26px;
+}
+
+.sed-do {
+	font-size: 22px;
+	padding-bottom: 50px;
+}
+
+.paragraphs {
+	font-size: 16px;
+	padding-bottom: 24px;
+}
+
+.shape {
+	width: 817px;
+	height: 817px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	margin-top: -408.5px;
+	right: -300px;
+}
+.shape::after {
+	content: '';
+	display: block;
+	background-color: #fff;
+	height: 100%;
+	width: 99999px;
+	left: 580px;
+	top: 0;
+	position: absolute;
+}
+.shape-image {
+	position: absolute;
+	top: 199px;
+	left: 97px;
+}
+
+.latest-post-wrapper {
+	background-color: #f1f1f1;
+}
+
+.block1 {
+	max-width: 460px;
+}
+
+.logo-description {
+	font-size: 16px;
+	color: black;
+}
+
+.logo2 {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.logo2-description {
+	padding-bottom: 37px;
+}
+
+.atom {
+	float: left;
+	background-color: #f1f1f1;
+	padding-right: 25px;
+}
+
+.float {
+
+}
+
+.float1 {
+	padding-bottom: 25px;
+}
+
+.float1,
+.float2 {
+	max-width: 300px;
+	font-size: 14px;
+}
+
