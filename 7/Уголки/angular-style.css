@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+div {
+	width: 400px;
+	height: 80px;
+	background-color: green;
+	margin: 50px;
+	padding-top: 30px;
+	padding-left: 20px;
+	color: white;
+	position: relative;
+}
+
+div::before,
+div::after {
+	content: '';
+	position: absolute;
+	height: 74px;
+	width: 3px;
+	background-color: green;
+}
+
+div::before {
+  left: 400px; bottom: 3px;
+}
+
+div::after {
+ 	right: 400px; bottom: 3px;
+}

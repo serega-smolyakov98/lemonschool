@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.battery {
+	width: 204px;
+	height: 68px;
+	border: 6px solid black;
+	margin: 20px;
+	position: relative;
+}
+
+.battery::after {
+	content: '';
+	position: absolute;
+	height: 22px;
+	width: 11px;
+	background-color: black;
+	left: 198px; top: 16px;
+}
+
+.battery::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+}
+
+.b-red::before {
+	background-color: red;
+	width: 33%;
+}
+
+.b-yellow::before {
+	background-color: yellow;
+	width: 66%;
+}
+
+.b-green::before {
+	background-color: green;
+	width: 100%;
+}
