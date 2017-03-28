@@ -1,0 +1,44 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+form {
+	border: 1px solid black;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.form {
+	padding-top: 15px;
+	padding-left: 16px;
+}
+
+input[type="submit"] {
+	width: 117px;
+	height: 20px;
+	background-color: black;
+	border: none;
+	color: white;
+	margin-bottom: 16px;
+}
+
+input[type="text"] {
+	border: 1px solid black;
+	display: block;
+	width: 367px;
+	height: 24px;
+	margin-top: 6px;
+}
+
+input[type="radio"]:last-of-type {
+	margin-left: 15px;
+}
+
+.radio {
+	display: block;	
+	margin-top: 13px;
+}
+
