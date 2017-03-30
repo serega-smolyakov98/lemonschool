@@ -1,0 +1,137 @@
+@import 'reset.css';
+
+.wrap-nav {
+	background-color: #02918c;
+	width: 100%;
+	height: 60px;
+	}
+
+.myfolio {
+	color: #ffffff;
+	padding-left: 51px;
+	float: left;
+}
+
+.myfolio span {
+	color: #cfc91d;
+}
+
+.myfolio,
+span {
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 800;
+	padding-top: 18px;
+	padding-bottom: 23px;
+}
+
+.wrap-nav ul {
+	right: 44px;
+}
+
+.wrap-nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #ffffff;
+	font-size: 12px;
+	padding-top: 26px;
+	padding-left: 50px;
+}
+
+.wrap-nav ul li:after {
+  content: '';
+  display: block; 
+  height: 1px;
+  width: 0%; 
+  background-color: #ffffff; 
+  transition: width 0.3s ease-in-out; 
+}
+
+.wrap-nav ul li:hover:after {
+  width: 100%;
+}
+
+.wrap-page1 {
+	text-align: center;
+}
+
+.page1 {
+	background-image: url('image.jpg');
+	background-size: cover;
+	width: 100%;
+ 	display: block;
+ 	margin-top: 210px;
+ 	color: #ffffff;
+ 	text-align: center;
+
+}
+
+.page1 p:nth-child(1) {
+	font-size: 30px;
+	margin-bottom: 18px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page1 p:nth-child(2) {
+	font-size: 68px;
+	letter-spacing: 23px;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 18px;
+}
+
+.page1 p:nth-child(3) {
+	font-size: 18px;
+	margin-bottom: 52px;
+}
+
+.page1 img {
+	margin-bottom: 52px;	
+}
+
+.know-more {
+	position: relative;
+	display: inline-block;
+	color: #0b1016;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	background-color: #cfc91d;
+	padding-top: 19px;
+	padding-bottom: 17px;
+	padding-right: 45px;
+	padding-left: 44px;
+
+}
+
+.know-more:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0%;
+	background-color: #0b1016;
+	transition: width 0.3s ease-in-out;
+}
+
+.know-more:hover:after{
+	width: 100%;
+}
+
+.know-more:hover {
+	opacity: 0.85;
+}
+
+.wrap-page2 {
+	width: 100%;
+	display: block;
+}
+
+.page2 {
+	width: 100%;
+	display: block;
+}
+
+
+
