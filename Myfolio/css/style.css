@@ -1,9 +1,9 @@
 @import 'reset.css';
-
+/* Блок №1*/
 .wrap-nav {
 	background-color: #02918c;
 	width: 100%;
-	height: 60px;
+	height: 66px;
 	}
 
 .myfolio {
@@ -27,6 +27,7 @@ span {
 
 .wrap-nav ul {
 	right: 44px;
+	position: absolute;
 }
 
 .wrap-nav ul li {
@@ -36,6 +37,7 @@ span {
 	color: #ffffff;
 	font-size: 12px;
 	padding-top: 26px;
+
 	padding-left: 50px;
 }
 
@@ -57,11 +59,12 @@ span {
 }
 
 .page1 {
-	background-image: url('image.jpg');
+	background-image: url('bgi-1.jpg');
 	background-size: cover;
 	width: 100%;
+	height: 100%;
  	display: block;
- 	margin-top: 210px;
+ 	padding-top: 210px;
  	color: #ffffff;
  	text-align: center;
 
@@ -103,7 +106,7 @@ span {
 	padding-bottom: 17px;
 	padding-right: 45px;
 	padding-left: 44px;
-
+	margin-bottom: 210px;
 }
 
 .know-more:after {
@@ -123,15 +126,226 @@ span {
 	opacity: 0.85;
 }
 
+/* Блок №2*/
+
 .wrap-page2 {
+	width: 100%;
+	text-align: center;
+}
+
+.page2 p:nth-child(1) {
+	padding-top: 98px;
+	color: #02918c;
+	font-size: 46px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.page2 p:nth-child(2) {
+	padding-top: 32px;
+	color: #7e8287;
+	font-size: 16px;
+}
+
+.page2 p:nth-child(3) {
+	padding-top: 36px;
+	padding-bottom: 80px;
+	color: #7e8287;
+	font-size: 16px;
+}
+
+.page2 p:nth-child(3) span {
+	font-size: 23px;
+	width: 875px;
+	text-transform: none;
+}
+
+.trigger-holder ul li {
+	display: inline-block;
+	width: 288px;
+	color: #7e8287;
+	border-right: 1px solid #7e8287;
+}
+
+.trigger-holder img {
+	padding-top: 35px;
+	padding-bottom: 31px;
+}
+
+.trigger-holder p:nth-child(2) {
+	padding-bottom: 30px;
+	font-size: 16px;
+}
+
+.trigger-holder p:nth-child(3) {
+	font-size: 11px;
+	padding-bottom: 57px;
+}
+
+.trigger-holder ul li:nth-child(4) {
+	border-right: none;
+	padding-bottom: 99px;
+}
+
+/* Блок №3*/
+
+.wrap-page3 {
+	background-color: #f0f0e8;
+	width: 100%;
+
+}
+
+.image {
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	width: 50%;
+}
+
+.page3 {
+	padding-bottom: 84px;
+}
+
+.text {
+	padding-left: 93px;
+}
+
+.text p:nth-child(1) {
+	color: #02918c;
+	font-size: 46px;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding-top: 74px;
+	padding-bottom: 45px;
+}
+
+.text p:nth-child(2),
+.text p:nth-child(3),
+.text p:nth-child(4) {
+	font-size: 16px;
+	color: #7e8287;
+}
+
+.text p:nth-child(2) {
+	padding-bottom: 31px;
+}
+
+.text p:nth-child(3) {
+	padding-bottom: 27px;
+}
+
+.triggers {
+	max-width: 644px;	
+	
+}
+
+.trig {
+	display: inline-block;
+}
+
+.trig p:nth-child(3) {
+	font-size: 11px;
+	color: #7e8287;
+}
+
+.trig p:nth-child(2) {
+	font-size: 16px;
+	color: #7e8287;
+	font-weight: 800;
+	padding-bottom: 19px;
+}
+
+.trig img {
+	padding-top: 59px;
+	padding-bottom: 17px;
+}
+
+.trig:nth-child(1),
+.trig:nth-child(3) {
+	padding-left: 95px;
+	padding-right: 114px;
+}
+
+/* Блок №4*/
+
+.wrap-page4 {
+	text-align: center;
+}
+
+.page4 p:nth-child(1) {
+	padding-top: 98px;
+	color: #02918c;
+	font-size: 46px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.page4 p:nth-child(2) {
+	padding-top: 32px;
+}
+
+.page4 p:nth-child(3){
+	padding-top: 30px;
+	padding-bottom: 27px;
+}
+
+.page4 p:nth-child(2),
+.page4 p:nth-child(3),
+.page4 p:nth-child(4) {
+	color: #7e8287;
+	font-size: 16px;
+}
+
+table {
+	margin-top: 78px;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px 0px;
+	vertical-align: bottom;
+	font-size: 0;
+}
+
+.hover img {
 	width: 100%;
 	display: block;
 }
 
-.page2 {
-	width: 100%;
-	display: block;
+
+
+/*Блок №5*/
+
+.wrap-page5 {
+	text-align: center;
 }
+
+.page5 p:nth-child(1) {
+	padding-top: 98px;
+	color: #02918c;
+	font-size: 46px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.page5 p:nth-child(2) {
+	padding-top: 32px;
+}
+
+.page5 p:nth-child(3) {
+	padding-top: 30px;
+	padding-bottom: 27px;
+}
+
+.page5 p:nth-child(2),
+.page5 p:nth-child(3),
+.page5 p:nth-child(4) {
+	color: #7e8287;
+	font-size: 16px;
+}
+
+
+
+
+
 
 
 
