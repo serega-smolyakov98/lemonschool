@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+.box {
+    width: 100%;
+    max-width: 600px;
+    min-height: 0;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fefffa;
+    overflow: hidden
+}
+
+.box__title {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #f4f4f4;
+    background: #2d8bbb;
+    border-top: 1px solid #3face4;
+    border-bottom: 1px solid #2479a5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box__text {
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+ 
+.box__text p {
+  color: black;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 0 20px
+}
+
+i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 25px;
+}
+
+i:before, i:after {
+  content: "";
+  position: absolute;
+  background-color: #eee;
+  width: 3px;
+  height: 9px;
+}
+
+i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ div.box__text {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+div.box__text,  i:before, ul li i:after {
+    transition: all 0.5s ease-in-out;
+}
+
+ 
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<input type="checkbox" checked>
+		<i></i>
+		<span class="box__title">Технические характеристики</span>
+		<div class="box__text">
+			<p>fjndfgjfghk</p>
+			<table>
+				<tr>
+					<td>Пропорции для смешивания<br>
+					(Основа: катализатор)</td>
+					<td>1:1</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
