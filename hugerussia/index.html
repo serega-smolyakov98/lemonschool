@@ -2,21 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="author" content="Serega Smolyakov">
 	<title>HUGE dental Russia</title>
 	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="wrap__nav">
 		<div class="nav">
 			<img class="nav__logo" src="images/logo.png" alt="picture">
-			<ul class="nav__list">
-				<li><a href="#">Преимущества Perfit</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-				<li><a href="#">Сертификаты</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
+			<input class="checkbox" id="menuCheckbox" type="checkbox">
+			<label for="menuCheckbox" class="nav-toggle">Mеню</label>
+			<ul class="nav__list checked">
+				<li><a href="#qua">Преимущества Perfit</a></li>
+				<li><a href="#off">Спецпредложения</a></li>
+				<li><a href="#ser">Сертификаты</a></li>
+				<li><a href="#del">Доставка</a></li>
+				<li><a href="#con">Контакты</a></li>
 			</ul>
 			<div class="nav__contacts">
 				<img src="images/phone-icon.png" alt="picture">
@@ -36,10 +40,10 @@
 				<p>Конкурентно</p>
 			</div>
 			<img class="huge" src="images/huge.png" alt="picture">
-			<div class="head__know-more"><a href="#">Заказать</a></div>
+			<div class="head__know-more"><a href="#con">Заказать</a></div>
 		</div>
 	</div>
-	<div class="wrap__quality">
+	<div id="qua" class="wrap__quality">
 		<div class="quality">
 			<img src="images/pf1.png" alt="picture">
 		</div>
@@ -65,7 +69,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrap__offer">
+	<div id="off" class="wrap__offer">
 		<div class="offer">
 			<p class="offer__title">Покупайте прямо сейчас!</p>
 			<p class="offer__title2">И получите в подарок:</p>
@@ -261,7 +265,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrap__sert">
+	<div id="ser" class="wrap__sert">
 		<div class="sert__title">✔ Сертификаты ✎</div>
 		<div class="sert">
 			<img src="images/sertificats.jpg" alt="picture">
@@ -275,38 +279,71 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrap__delivery">
-			<div class="delivery">
-				<div class="dev__item">Доставка</div>
-				<div class="dev__text">Доставка осуществляется с собственного склада, собственной службой доставки в любой регион РФ, в том числе Калининградскую область и Крым.
-				</div>
-				<div class="dev__time">Cрок доставки 2-3 дня.</div>
+	<div id="del" class="wrap__delivery">
+		<div class="delivery">
+			<div class="dev__item">Доставка</div>
+			<div class="dev__text">Доставка осуществляется с собственного склада, собственной службой доставки в любой регион РФ, в том числе Калининградскую область и Крым.
 			</div>
-			<div class="sert__margin">
-				<img src="images/image-(2).png" alt="picture">
-			</div>
-	</div>
-	<div class="wrap__contacts">
-		<div class="contacts">
-			<p>Заказать:</p>
-			<p>Напишите нам!</p>
-			<form action="send.php" method="post">
-				<div class="form-control">
-					<input type="text" name="name" id="name" placeholder="Ваше Имя" required>
-				</div>
-				<div class="form-control">
-					<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
-				</div>
-				<div class="form-control">
-					<textarea name="message" id="message" placeholder="Сообщение">
-					</textarea>
-				</div>
-				<div class="form-control">
-					<input type="submit" value="Отправить">
-				</div>
-			</form>	
+			<div class="dev__time">Cрок доставки 2-3 дня.</div>
+		</div>
+		<div class="sert__margin">
+			<img src="images/image-(2).png" alt="picture">
 		</div>
 	</div>
-	<footer>© 2016 HUGE dental Russia</footer>
+	<div id="con" class="wrap__contacts">
+	<p class="title__contact">Контакты ☎</p>
+		<div class="contact">
+		    <form action="#">
+		        <fieldset>					
+		            <div class="row">
+		                <section class="col col-2">
+		                    <label class="input">
+		                        <i class="fa fa-append fa-user"></i>
+		                        <input type="text" placeholder="Имя" required>
+		                    </label>
+		                </section>
+		                <section class="col col-2">
+		                    <label class="input">
+		                        <i class="fa fa-append fa-envelope-o"></i>
+		                        <input type="email" placeholder="E-mail" required>
+		                    </label>
+		                </section>
+		            </div>
+		            <section>
+		                <label class="input">
+		                    <i class="fa fa-append fa-tag"></i>
+		                    <input type="text" placeholder="Тема">
+		                </label>
+		            </section>               
+		            <section>
+		                <label class="textarea">
+		                    <i class="fa fa-append fa-comment"></i>
+		                    <textarea rows="4" placeholder="Сообщение" required></textarea>
+		                </label>
+		            </section>             
+		            <button type="submit" class="button">Отправить</button>
+		        </fieldset>						
+		    </form>
+		</div>
+		<div class="contact__item2">
+			<div class="nav__contacts2">
+				<img src="images/phone-icon.png" alt="picture">
+				<div class="nav__contacts__phone2">
+					<p>Москва: +7 (929) <span>656-38-02</span></p>
+					<p>Калининград: +7 (911) <span>48-00-646</span></p>
+				</div>
+				<div class="m">
+					<img class="mail__img" src="images/m.png" alt="picture">
+				<p class="mail">Эл.почта: orion@freightlines.ru</p>
+				</div>
+				<div class="con__img">
+					<img src="images/orion.png" alt="picture">
+					<p>С Уважением,<br>
+					Орион | HUGE Dental Russia</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">© 2017 HUGE dental Russia</footer>
 </body>
 </html>
