@@ -1,27 +1,37 @@
-// SLIDER
 
-$(function() {      
-  var width=$('.slider-box').width();                     // Ширина слайдера.
-      interval = 3900;                                    // Интервал смены слайдов.
- 
-  $('.slider img:last').clone().prependTo('.slider');     // Копия последнего слайда помещается в начало.
-  $('.slider img').eq(1).clone().appendTo('.slider');     // Копия первого слайда помещается в конец.  
-  $('.slider').css('margin-left', -width);                // Контейнер .slider сдвигается влево на ширину одного слайда.
-  setInterval('animation()',interval);                    // Запускается функция animation(), выполняющая смену слайдов.
-});
-function animation(){
- 
-  var margin = parseInt($('.slider').css('marginLeft'));  // Текущее смещение блока .slider
-      width=$('.slider-box').width(),                     // Ширина слайдера.
-      slidersAmount=$('.slider').children().length;       // Количество слайдов в слайдере.
-  if(margin!=(-width*(slidersAmount-1)))                  // Если текущий слайд не последний,
-  {
-    margin=margin-width;                                  // то значение margin уменьшается на ширину слайда.
-  }else{                                                  // Если показан последний слайд,
-    $('.slider').css('margin-left', -width);              // то блок .slider возвращается в начальное положение,
-    margin=-width*2;         
-  }
-  $('.slider').animate({marginLeft:margin},1000);          // Блок .slider смещается влево на 1 слайд.
-};
+// SLIDER HEAD
+$(document).ready(function(){
+      $('.slider').slick({
+      	autoplay: true,
+      	pauseOnHover: false,
+      	pauseOnFocus: false,
+      	speed: 1000
+      })
+    });
+//SLIDER HEAD
 
-// SLIDER
+// ACCORDION
+$('.accordion__content').mCustomScrollbar();
+		$('.accordion__link').on('click', function() {
+			if ($(this).hasClass('active')) {
+				return
+			}
+			$('.accordion__link.active').next().slideUp();
+			$('.accordion__link.active').removeClass('active');
+			$(this).next().slideDown();
+			$(this).addClass('active');
+		});
+// ACCORDION
+
+// SLIDER-1
+$(document).ready(function(){
+      $('.slider-1').slick({
+      	autoplay: true,
+      	pauseOnHover: true,
+      	pauseOnFocus: true,
+      	speed: 1000,
+        prevArrow: '<button id="prev" type="button" class="btn btn-juliet"></button>',
+        nextArrow: '<button id="next" type="button" class="btn btn-juliet"></button>'
+      })
+    });
+// SLIDER-1
